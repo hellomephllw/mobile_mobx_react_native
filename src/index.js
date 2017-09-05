@@ -9,7 +9,7 @@
 import { Navigation } from 'react-native-navigation';
 import { Platform } from 'react-native';
 
-import registerScreens from 'routes/registerScreen';
+import registerScreens from './routes/registerScreen';
 
 registerScreens(); // this is where you register all of your app's screens
 
@@ -19,11 +19,27 @@ Navigation.startTabBasedApp({
         {
             label: 'Test',
             screen: 'example.TestScreen', // this is a registered name for a screen
-            icon: require('./images/one.png'),
+            icon: require('./images/temp.png'),
             title: 'Test Screen'
+        },
+        {
+            label: 'Test2',
+            screen: 'example.Test2Screen', // this is a registered name for a screen
+            icon: require('./images/two.png'),
+            title: 'Test2 Screen',
+            // iconInsets: { // add this to change icon position (optional, iOS only).
+            //     top: 5, // optional, default is 0.
+            //     left: 5, // optional, default is 0.
+            //     bottom: 5, // optional, default is 0.
+            //     right: 5 // optional, default is 0.
+            // }
         }
     ],
     tabsStyle: {//ios
+        tabBarLabelColor: '#ffb700',
+        tabBarButtonColor: '#000',
+        tabBarWidth: 10,
+        tabBarTextFontSize: 18
     },
     appStyle: {//android
         forceTitlesDisplay: true

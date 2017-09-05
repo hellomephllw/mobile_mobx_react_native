@@ -10,7 +10,7 @@ import {
     View
 } from 'react-native';
 
-export default class TestScreen extends Component {
+export default class Test2Screen extends Component {
 
     constructor(props) {
         super(props);
@@ -19,7 +19,7 @@ export default class TestScreen extends Component {
     render() {
         return (
             <View>
-                <Text>Test!!</Text>
+                <Text>Test222222</Text>
             </View>
         );
     }
