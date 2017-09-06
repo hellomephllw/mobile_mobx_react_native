@@ -4,7 +4,7 @@ import TestScreen from '../components/test/TestScreen';
 import Test2Screen from '../components/test/Test2Screen';
 
 // register all screens of the app (including internal ones)
-export default () => {
-    Navigation.registerComponent('example.TestScreen', () => TestScreen);
-    Navigation.registerComponent('example.Test2Screen', () => Test2Screen);
+export default (store: {}, Provider: {}) => {
+    Navigation.registerComponent('example.TestScreen', () => TestScreen, store, Provider);
+    Navigation.registerComponent('example.Test2Screen', () => Test2Screen, store, Provider);
 };

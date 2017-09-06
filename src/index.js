@@ -10,8 +10,12 @@ import { Navigation } from 'react-native-navigation';
 import { Platform } from 'react-native';
 
 import registerScreens from './routes/registerScreen';
+import TestStore from './stores/test/TestStore';
+import RnnProvider from './utils/navigation/react-native-navigation/RnnProvider';
 
-registerScreens(); // this is where you register all of your app's screens
+var stores = {TestStore};
+
+registerScreens(stores, RnnProvider); // this is where you register all of your app's screens
 
 // start the app
 Navigation.startTabBasedApp({
@@ -38,8 +42,7 @@ Navigation.startTabBasedApp({
     tabsStyle: {//ios
         tabBarLabelColor: '#ffb700',
         tabBarButtonColor: '#000',
-        tabBarWidth: 10,
-        tabBarTextFontSize: 18
+        // tabBarTextFontSize: 18
     },
     appStyle: {//android
         forceTitlesDisplay: true
