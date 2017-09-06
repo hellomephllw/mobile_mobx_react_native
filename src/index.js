@@ -9,13 +9,14 @@
 import { Navigation } from 'react-native-navigation';
 import { Platform } from 'react-native';
 
-import registerScreens from './routes/registerScreen';
+import routesAdaptor from './utils/navigation/routesAdaptor';
 import TestStore from './stores/test/TestStore';
 import RnnProvider from './utils/navigation/react-native-navigation/RnnProvider';
 
-var stores = {TestStore};
+const stores = { TestStore };
 
-registerScreens(stores, RnnProvider); // this is where you register all of your app's screens
+//
+routesAdaptor.initScreens(stores, RnnProvider);
 
 // start the app
 Navigation.startTabBasedApp({
