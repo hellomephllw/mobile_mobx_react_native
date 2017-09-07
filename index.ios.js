@@ -6,7 +6,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, View } from 'react-native';
 import Root from './src';
-
 export default class rnTest extends Component {
     render() {
         return (

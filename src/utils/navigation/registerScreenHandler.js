@@ -1,4 +1,4 @@
-import screens from '../../routes/registerScreen'
+import { screens } from '../../routes/registerScreens';
 
 export default registerScreenHandler = {
     get: () => screens
