@@ -26,7 +26,6 @@ export default class TestScreen extends Component {
     }
 
     render() {
-        console.log(this.props);
         const { TestStore } = this.props;
         return (
             <View>

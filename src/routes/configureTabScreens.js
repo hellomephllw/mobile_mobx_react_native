@@ -14,10 +14,18 @@ export default tabScreens = [
     },
     {
         screenKey: screenConst._TEST2_SCREEN,
-        screenTitle: 'Test',
-        tabLabel: 'test',
+        screenTitle: 'Test2',
+        tabLabel: 'test2',
         // labelColor: '',
         // labelFontSize: '',
         tabIcon: twoIcon
+    },
+    {
+        screenKey: screenConst._TEST3_SCREEN,
+        screenTitle: 'Test3',
+        tabLabel: 'test3',
+        // labelColor: '',
+        // labelFontSize: '',
+        tabIcon: tempIcon
     }
 ];

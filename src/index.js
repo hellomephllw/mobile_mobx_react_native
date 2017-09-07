@@ -1,6 +1,4 @@
 import indexAdaptor from './utils/navigation/indexAdaptor';
-import TestStore from './stores/test/TestStore';
-
-const stores = { TestStore };
+import stores from './stores';
 
 indexAdaptor.startApp(stores);
