@@ -1,5 +1,7 @@
-import { screens } from '../../routes/registerScreens';
+import { screens, screenConst } from '../../routes/registerScreens';
 
 export default registerScreenHandler = {
-    get: () => screens
+    get: () => screens,
+    getScreenByKey: key => screens[key],
+    getKeys: () => screenConst
 };
