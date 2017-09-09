@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Navigation } from 'react-native-navigation';
 import registerScreenHandler from '../registerScreenHandler';
 import configureScreensHandler from '../configureScreensHandler';
 
@@ -51,6 +52,10 @@ export default class RnnCpn extends Component {
             screen: navName,
             title: registerScreenHandler.getScreenByKey(navName)
         });
+        // this.props.navigator.toggleTabs({
+        //     to: 'hidden',
+        //     animated: false
+        // });
     }
 
 }
