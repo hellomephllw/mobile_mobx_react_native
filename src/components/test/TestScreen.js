@@ -50,11 +50,12 @@ export default class TestScreen extends BaseCpn {
 
     render() {
         const { TestStore } = this.props;
+
         return (
             <View>
                 <Text>Test!!</Text>
-                <Text>{TestStore.name}</Text>
-                <Text>{TestStore.age}</Text>
+                <Text>{ TestStore.name }</Text>
+                <Text>{ TestStore.age }</Text>
                 <TouchableOpacity onPress={this._onPressClickBtn}>
                     <Text>click</Text>
                 </TouchableOpacity>
